@@ -8,6 +8,11 @@ export default function AddItem({adicionar}) {
 
   const [novoItem, setNovoItem] = useState('');
 
+  function AddItem () {
+    adicionar (novoItem);
+    setNovoItem('');
+  }
+
   return (
     <View>
       <TextInput 
